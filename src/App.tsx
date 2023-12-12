@@ -74,6 +74,9 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
+        <header>
+        <title>Quiz</title>
+        </header>
         <h1>TYPE SCRIPT QUIZ USING API</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
@@ -98,7 +101,7 @@ const App: React.FC = () => {
           </button>
         ) : null}
 
-<h3> BY- IKSHIT agarwal</h3>
+<h5> BY- ikshit agarwal</h5>
       </Wrapper>
     </>
   );
